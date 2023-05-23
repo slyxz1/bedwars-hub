@@ -8,7 +8,7 @@ Section:NewButton("Vape V4", "MOST USED BEDWARS SCRIPT", function()
 end)
 Section:NewButton("Inf Jump", "Infinite Jump", function()
     local InfiniteJumpEnabled = true
-game:GetService("UserInputService").JumpRequest:connect(function()
+game:GetService("UserInputService").JumpRequest:Connect(function()
 	if InfiniteJumpEnabled then
 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 	end
